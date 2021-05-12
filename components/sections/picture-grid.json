@@ -2,7 +2,8 @@
   "collectionName": "components_sections_picture_grids",
   "info": {
     "name": "Picture Grid",
-    "icon": "border-none"
+    "icon": "border-none",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,6 +11,12 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.grid-picture"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
     }
   }
 }

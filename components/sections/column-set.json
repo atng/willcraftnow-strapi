@@ -2,7 +2,8 @@
   "collectionName": "components_sections_column_sets",
   "info": {
     "name": "Column Set",
-    "icon": "border-all"
+    "icon": "border-all",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,6 +11,12 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.column"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
     }
   }
 }
