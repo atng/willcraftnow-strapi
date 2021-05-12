@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "waitlists",
+  "info": {
+    "name": "waitlist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    }
+  }
+}

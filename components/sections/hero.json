@@ -25,6 +25,14 @@
     },
     "content": {
       "type": "richtext"
+    },
+    "cta": {
+      "type": "enumeration",
+      "enum": [
+        "SEARCH",
+        "EMAIL_SIGNUP",
+        "ENTER_MARKETPLACE"
+      ]
     }
   }
 }
