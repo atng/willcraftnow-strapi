@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_column_sets",
+  "info": {
+    "name": "Column Set",
+    "icon": "border-all"
+  },
+  "options": {},
+  "attributes": {
+    "Column": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.column"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "static_content_pages",
+  "info": {
+    "name": "Static Content Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "updated": {
+      "type": "datetime"
+    }
+  }
+}

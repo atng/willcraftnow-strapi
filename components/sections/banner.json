@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_banners",
+  "info": {
+    "name": "banner",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

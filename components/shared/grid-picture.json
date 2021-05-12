@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_grid_pictures",
+  "info": {
+    "name": "Grid Picture",
+    "icon": "bolt"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

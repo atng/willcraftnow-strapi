@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_carousels",
+  "info": {
+    "name": "carousel",
+    "icon": "images"
+  },
+  "options": {},
+  "attributes": {
+    "Slide": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.slide"
+    }
+  }
+}

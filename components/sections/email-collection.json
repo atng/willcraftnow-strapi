@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_email_collections",
+  "info": {
+    "name": "email_collection",
+    "icon": "chalkboard-teacher"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "scroll_percentage": {
+      "type": "integer"
+    },
+    "endpoint": {
+      "type": "string"
+    }
+  }
+}

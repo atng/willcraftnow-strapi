@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_picture_grids",
+  "info": {
+    "name": "Picture Grid",
+    "icon": "border-none"
+  },
+  "options": {},
+  "attributes": {
+    "grid_picture": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.grid-picture"
+    }
+  }
+}
