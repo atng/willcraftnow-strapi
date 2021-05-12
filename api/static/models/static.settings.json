@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "static_content_pages",
+  "collectionName": "statics",
   "info": {
-    "name": "StaticContentPage",
-    "description": ""
+    "name": "static"
   },
   "options": {
     "increments": true,
@@ -12,18 +11,15 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "content": {
+      "type": "richtext"
+    },
     "title": {
       "type": "string"
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "content": {
-      "type": "richtext"
-    },
-    "updated": {
-      "type": "datetime"
     },
     "seo": {
       "type": "component",

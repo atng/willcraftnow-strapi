@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "landing_pages",
+  "collectionName": "landings",
   "info": {
-    "name": "LandingPage",
+    "name": "Landing",
     "description": ""
   },
   "options": {
@@ -12,16 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "feature_section": {
+    "dynamic": {
       "type": "dynamiczone",
       "components": [
-        "sections.hero",
+        "sections.carousel",
         "sections.column-set",
         "sections.banner",
-        "sections.carousel",
         "sections.email-collection",
-        "sections.picture-grid"
+        "sections.picture-grid",
+        "sections.hero"
       ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": true
     },
     "title": {
       "type": "string"
@@ -29,11 +35,6 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
-    },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
     }
   }
 }
