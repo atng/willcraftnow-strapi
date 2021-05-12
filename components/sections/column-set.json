@@ -17,6 +17,9 @@
     },
     "sub_heading": {
       "type": "string"
+    },
+    "small": {
+      "type": "boolean"
     }
   }
 }
