@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "static_content_pages",
   "info": {
-    "name": "Static Content Page"
+    "name": "Static Content Page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -23,6 +24,11 @@
     },
     "updated": {
       "type": "datetime"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
