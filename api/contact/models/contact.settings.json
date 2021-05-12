@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "name": "Contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "enquiry_type": {
+      "type": "enumeration",
+      "enum": [
+        "REFUND",
+        "PARTNERSHIPS",
+        "GENERAL"
+      ]
+    },
+    "email": {
+      "type": "email"
+    },
+    "body": {
+      "type": "text"
+    }
+  }
+}
