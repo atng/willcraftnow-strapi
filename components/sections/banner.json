@@ -1,8 +1,9 @@
 {
   "collectionName": "components_sections_banners",
   "info": {
-    "name": "banner",
-    "icon": "apple-alt"
+    "name": "Banner",
+    "icon": "apple-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {

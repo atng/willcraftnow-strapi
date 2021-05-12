@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "static_content_pages",
   "info": {
-    "name": "Static Content Page",
+    "name": "StaticContentPage",
     "description": ""
   },
   "options": {
