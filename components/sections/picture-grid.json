@@ -17,6 +17,10 @@
     },
     "sub_heading": {
       "type": "string"
+    },
+    "equal": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
