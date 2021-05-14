@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_links",
+  "info": {
+    "name": "footer_link",
+    "icon": "bacon",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "link_group": {
+      "type": "enumeration",
+      "enum": [
+        "legal",
+        "company"
+      ]
+    }
+  }
+}

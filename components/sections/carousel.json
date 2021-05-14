@@ -13,7 +13,8 @@
       "component": "shared.slide"
     },
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "sub_heading": {
       "type": "string"

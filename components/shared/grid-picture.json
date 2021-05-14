@@ -2,7 +2,8 @@
   "collectionName": "components_shared_grid_pictures",
   "info": {
     "name": "Grid Picture",
-    "icon": "bolt"
+    "icon": "bolt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,21 +12,40 @@
       "via": "related",
       "allowedTypes": [
         "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "link": {
       "type": "string"
     },
     "description": {
       "type": "text"
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "xxsmall",
+        "xsmall",
+        "small",
+        "medium",
+        "large",
+        "xlarge",
+        "xxlarge"
+      ],
+      "default": "medium",
+      "required": true
+    },
+    "square": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }

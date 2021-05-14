@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "globals",
   "info": {
-    "name": "Global"
+    "name": "Global",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "favicon": {
@@ -18,7 +20,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "siteName": {
       "type": "string",
@@ -29,6 +32,28 @@
       "repeatable": false,
       "component": "shared.seo",
       "required": true
+    },
+    "canonical": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "expanded_footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.expanded-footer"
+    },
+    "nav_bar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.nav-bar"
     }
   }
 }

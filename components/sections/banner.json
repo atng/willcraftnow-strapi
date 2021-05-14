@@ -11,7 +11,8 @@
       "type": "richtext"
     },
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

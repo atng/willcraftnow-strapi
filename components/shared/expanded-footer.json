@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_expanded_footers",
+  "info": {
+    "name": "expanded_footer",
+    "icon": "arrows-alt"
+  },
+  "options": {},
+  "attributes": {
+    "show_instagram": {
+      "type": "boolean"
+    },
+    "show_facebook": {
+      "type": "boolean"
+    },
+    "show_twitter": {
+      "type": "boolean"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    }
+  }
+}

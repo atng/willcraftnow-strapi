@@ -2,7 +2,8 @@
   "collectionName": "components_shared_columns",
   "info": {
     "name": "Column",
-    "icon": "th"
+    "icon": "th",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,21 +12,36 @@
       "via": "related",
       "allowedTypes": [
         "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "sub_heading": {
       "type": "string"
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "xxsmall",
+        "xsmall",
+        "small",
+        "medium",
+        "large",
+        "xlarge",
+        "xxlarge"
+      ],
+      "default": "medium",
+      "required": true
     }
   }
 }

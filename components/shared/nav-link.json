@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_nav_links",
+  "info": {
+    "name": "nav_link",
+    "icon": "bell",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "link_group": {
+      "type": "enumeration",
+      "enum": [
+        "plant_resources"
+      ]
+    }
+  }
+}

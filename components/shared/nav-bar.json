@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_nav_bars",
+  "info": {
+    "name": "nav_bar",
+    "icon": "arrow-alt-circle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nav_link": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.nav-link"
+    }
+  }
+}

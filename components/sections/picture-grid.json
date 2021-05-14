@@ -13,14 +13,11 @@
       "component": "shared.grid-picture"
     },
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "sub_heading": {
       "type": "string"
-    },
-    "equal": {
-      "type": "boolean",
-      "default": true
     }
   }
 }

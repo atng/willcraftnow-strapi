@@ -13,13 +13,16 @@
       "component": "shared.column"
     },
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "sub_heading": {
       "type": "string"
     },
-    "small": {
-      "type": "boolean"
+    "expanded": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

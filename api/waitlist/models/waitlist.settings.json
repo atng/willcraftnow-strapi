@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "waitlists",
   "info": {
-    "name": "waitlist"
+    "name": "waitlist",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "contacts",
   "info": {
-    "name": "Contact"
+    "name": "Contact",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

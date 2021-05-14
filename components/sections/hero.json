@@ -16,15 +16,15 @@
       "via": "related",
       "allowedTypes": [
         "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",
-      "required": false,
+      "required": true,
       "pluginOptions": {}
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "cta": {
       "type": "enumeration",

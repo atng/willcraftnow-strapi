@@ -8,10 +8,12 @@
   "options": {},
   "attributes": {
     "heading": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "scroll_percentage": {
       "type": "integer"
@@ -20,7 +22,8 @@
       "type": "string"
     },
     "button_label": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
