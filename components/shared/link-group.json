@@ -2,7 +2,8 @@
   "collectionName": "components_shared_link_groups",
   "info": {
     "name": "link_group",
-    "icon": "align-center"
+    "icon": "align-center",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -10,6 +11,9 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.link"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

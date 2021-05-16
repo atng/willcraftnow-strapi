@@ -58,7 +58,6 @@
     "footer_links": {
       "type": "dynamiczone",
       "components": [
-        "shared.link",
         "shared.link-group"
       ]
     },
