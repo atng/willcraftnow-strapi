@@ -43,8 +43,8 @@
       "required": true
     },
     "categories": {
-      "collection": "category",
       "via": "articles",
+      "collection": "category",
       "dominant": true
     },
     "image": {
@@ -67,7 +67,8 @@
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "required": true
     },
     "email_collection": {
       "type": "component",
