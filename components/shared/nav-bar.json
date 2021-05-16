@@ -11,6 +11,16 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.nav-link"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
     }
   }
 }
