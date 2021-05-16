@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_shared_nav_bars",
+  "collectionName": "components_shared_logos",
   "info": {
-    "name": "nav_bar",
-    "icon": "arrow-alt-circle-up",
-    "description": ""
+    "name": "logo",
+    "icon": "angle-double-right"
   },
   "options": {},
   "attributes": {

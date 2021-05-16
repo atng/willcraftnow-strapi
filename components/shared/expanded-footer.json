@@ -14,11 +14,6 @@
     },
     "show_twitter": {
       "type": "boolean"
-    },
-    "link": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.link"
     }
   }
 }

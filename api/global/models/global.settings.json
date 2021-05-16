@@ -54,6 +54,20 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.nav-bar"
+    },
+    "footer_links": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.link",
+        "shared.link-group"
+      ]
+    },
+    "nav_links": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.link",
+        "shared.link-group"
+      ]
     }
   }
 }
