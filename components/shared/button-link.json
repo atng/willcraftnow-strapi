@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_shared_links",
+  "collectionName": "components_shared_button_links",
   "info": {
-    "name": "link",
-    "icon": "audio-description",
-    "description": ""
+    "name": "button_link",
+    "icon": "arrow-circle-up"
   },
   "options": {},
   "attributes": {

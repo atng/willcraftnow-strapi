@@ -65,7 +65,8 @@
       "type": "dynamiczone",
       "components": [
         "shared.link",
-        "shared.link-group"
+        "shared.link-group",
+        "shared.button-link"
       ]
     }
   }
