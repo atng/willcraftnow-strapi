@@ -12,6 +12,11 @@
     },
     "href": {
       "type": "string"
+    },
+    "button": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

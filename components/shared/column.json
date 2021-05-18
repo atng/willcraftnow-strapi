@@ -42,6 +42,20 @@
       ],
       "default": "medium",
       "required": true
+    },
+    "imageWidth": {
+      "type": "enumeration",
+      "enum": [
+        "xxsmall",
+        "xsmall",
+        "small",
+        "medium",
+        "large",
+        "xlarge",
+        "xxlarge"
+      ],
+      "default": "medium",
+      "required": true
     }
   }
 }
