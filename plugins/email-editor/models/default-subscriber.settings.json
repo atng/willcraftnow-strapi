@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "default_subscriber",
+  "info": {
+    "name": "defaultSubscriber",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "design": {
+      "type": "json",
+      "required": true
+    },
+    "html": {
+      "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "subject": {
+      "type": "text",
+      "required": true
+    },
+    "email_type": {
+      "enum": ["subscribe", "unsubscribe"],
+      "default": "subscribe",
+      "type": "enumeration"
+    }
+  }
+}

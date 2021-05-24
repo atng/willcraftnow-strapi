@@ -1,0 +1,212 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/templates",
+      "handler": "email-templates.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/templates/count",
+      "handler": "email-templates.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/templates/:id",
+      "handler": "email-templates.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/templates",
+      "handler": "email-templates.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/templates/:id",
+      "handler": "email-templates.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/templates/:id",
+      "handler": "email-templates.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subscribe",
+      "handler": "subscribers.subscribe",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/unsubscribe",
+      "handler": "subscribers.unsubscribe",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/send-subscribe/:id",
+      "handler": "subscribers.sendSubscribeEmail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/send-unsubscribe/:id",
+      "handler": "subscribers.sendUnsubscribeEmail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subscribers",
+      "handler": "subscribers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subscribers/count",
+      "handler": "subscribers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subscribers/:id",
+      "handler": "subscribers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subscribers",
+      "handler": "subscribers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subscribers/:id",
+      "handler": "subscribers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subscribers/:id",
+      "handler": "subscribers.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emails",
+      "handler": "email-editor.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emails/count",
+      "handler": "email-editor.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/emails/:id",
+      "handler": "email-editor.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/emails",
+      "handler": "email-editor.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/emails/:id",
+      "handler": "email-editor.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/emails/:id",
+      "handler": "email-editor.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/send-test/:id",
+      "handler": "email-editor.sendTestEmail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/send/:id",
+      "handler": "email-editor.sendEmail",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subscriber-email/:email_type",
+      "handler": "default-subscriber.createOrUpdate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subscriber-email/:email_type",
+      "handler": "default-subscriber.findOne",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

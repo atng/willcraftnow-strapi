@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_contents",
+  "info": {
+    "name": "emailContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "design": {
+      "type": "json",
+      "required": true
+    },
+    "content": {
+      "type": "json",
+      "required": false
+    },
+    "html": {
+      "type": "text",
+      "required": true
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "subject": {
+      "type": "text",
+      "required": true
+    },
+    "sent_on": { "type": "datetime", "required": false }
+  }
+}
