@@ -1,5 +1,4 @@
 module.exports = ({ env }) => {
-  console.log(env("EMAIL_CLIENT_ID"));
   return {
     email: {
       provider: "gmail-2lo",
