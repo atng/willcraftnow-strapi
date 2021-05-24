@@ -17,6 +17,8 @@
     "pg-connection-string": "^2.5.0",
     "sqlite3": "5.0.0",
     "strapi": "3.6.2",
+    "axios": "^0.21.1",
+    "react-email-editor": "^1.2.0",
     "strapi-admin": "3.6.2",
     "strapi-connector-bookshelf": "3.6.2",
     "strapi-plugin-content-manager": "3.6.2",
@@ -41,5 +43,8 @@
     "node": ">=10.16.0 <=14.x.x",
     "npm": "^6.0.0"
   },
+  "workspaces": [
+    "plugins/*"
+  ],
   "license": "MIT"
 }
