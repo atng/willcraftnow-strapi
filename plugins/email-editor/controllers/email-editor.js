@@ -61,11 +61,11 @@ module.exports = {
     try {
       await sendTemplatedEmail(
         {
-          to: "development@porchbuds.com",
+          to: process.env.DEFAULT_EMAIL,
           // from: is not specified, so it's the defaultFrom that will be used instead
         },
         emailTemplate,
-        { email: "development@porchbuds.com" }
+        { email: process.env.DEFAULT_EMAIL }
       );
     } catch (e) {
       ctx.response.status = 403;
