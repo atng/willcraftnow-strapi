@@ -6,12 +6,13 @@
 
 import React, { memo } from "react";
 // import PropTypes from 'prop-types';
-import { Padded, Flex, Button } from "@buffetjs/core";
-import { Header } from "@buffetjs/custom";
 import pluginId from "../../pluginId";
-import createStrapi from "strapi";
+import { Button, Padded, Flex } from "@buffetjs/core";
+import { Header } from "@buffetjs/custom";
+import axios from "axios";
 
 const HomePage = () => {
+  const [deployed, setDeployed] = React.useState(false);
   return (
     <Padded left right bottom top size="sm">
       <Header
@@ -22,21 +23,23 @@ const HomePage = () => {
       />
       <Flex>
         <Button
+          label="Deploy"
+          disabled={deployed}
           onClick={() => {
-            // strapi.notification.toggle({
-            //   type: "info",
-            //   message: "Deploying. Please check the site after 5mins.",
-            // });
-            // axios.post(
-            //   `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/${GITHUB_WORKFLOW_FILE}/dispatches`,
-            //   { ref: "master" },
-            //   {
-            //     headers: {
-            //       Accept: "application/vnd.github.v3+json",
-            //       Authorization: `token ${process.env.GITHUB_TOKEN}`,
-            //     },
-            //   }
-            // );
+            setDeployed(true);
+            setTimeout(() => setDeployed(false), 300000);
+            try {
+              axios.post(`${strapi.backendURL}/${pluginId}/`);
+              strapi.notification.toggle({
+                type: "info",
+                message: "Deploying. Please check the site after 5mins.",
+              });
+            } catch (e) {
+              strapi.notification.toggle({
+                type: "warning",
+                message: "Oops! Something went wrong.",
+              });
+            }
           }}
         />
       </Flex>

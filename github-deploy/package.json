@@ -3,11 +3,17 @@
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
-    "name": "Github Deployment",
+    "name": "github-deploy",
     "icon": "plug",
     "description": "Description of github-deploy plugin."
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1",
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
+    "net": "^1.0.2",
+    "tls": "0.0.1"
+  },
   "author": {
     "name": "A Strapi developer",
     "email": "",

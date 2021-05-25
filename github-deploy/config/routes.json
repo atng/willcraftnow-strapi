@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "method": "POST",
+      "method": "GET",
       "path": "/",
       "handler": "github-deploy.index",
       "config": {
