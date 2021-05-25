@@ -1,10 +1,9 @@
 import React from "react";
 import Table from "../components/Table";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Padded } from "@buffetjs/core";
 import {
-  faPencilAlt,
   faPaperPlane,
   faPlus,
   faTrashAlt,
@@ -13,11 +12,9 @@ import axios from "axios";
 
 import { baseUrl } from "../baseUrl";
 import pluginId from "../pluginId";
-import { useStrapi } from "strapi-helper-plugin";
 
 const EmailList = (props) => {
   const history = useHistory();
-  const location = useLocation();
   const [sending, setSending] = React.useState(false);
   const [sendingTest, setSendingTest] = React.useState(false);
   const [dataResponse, setDataResponse] = React.useState(null);
@@ -116,8 +113,9 @@ const EmailList = (props) => {
     },
     {
       icon: <FontAwesomeIcon icon={faTrashAlt} />,
-      onClick: (data) => {
-        console.log(data);
+      onClick: async (data) => {
+        await axios.delete(`${baseUrl}/${pluginId}/emails/${data.id}`);
+        getDataResponse();
       },
     },
   ];

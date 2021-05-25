@@ -5,14 +5,17 @@
  */
 
 import React from "react";
+
 import axios from "axios";
 import { useParams, useHistory } from "react-router-dom";
-import pluginId from "../pluginId";
-import { baseUrl } from "../baseUrl";
-import Editor from "../components/Editor/";
 
-const DefaultSubscribeEditor = ({ urlKey }) => {
-  const { email_type } = useParams();
+import pluginId from "../../pluginId";
+import { baseUrl } from "../../baseUrl";
+
+import Editor from "../../components/Editor/";
+
+const EmailEditor = ({ urlKey, getUrlKey }) => {
+  const { id } = useParams();
   const history = useHistory();
 
   const [data, setData] = React.useState({
@@ -25,7 +28,7 @@ const DefaultSubscribeEditor = ({ urlKey }) => {
 
   const getData = async () => {
     const { data } = await axios.get(
-      `${baseUrl}/${pluginId}/${urlKey}/${email_type}`
+      `${baseUrl}/${pluginId}/${getUrlKey}/${id}`
     );
     setData({
       html: data.html,
@@ -41,23 +44,16 @@ const DefaultSubscribeEditor = ({ urlKey }) => {
   }, []);
 
   const onSave = async (_data) => {
-    axios.post(`${baseUrl}/${pluginId}/${urlKey}/${email_type}`, {
-      ..._data,
-      email_type,
-    });
+    axios.post(`${baseUrl}/${pluginId}/${urlKey}`, _data);
   };
 
   const headerProps = {
-    title: {
-      label: `${
-        email_type.toUpperCase() === "SUBSCRIBE" ? "Subscribe" : "Unsubscribe"
-      } Template`,
-    },
-    content: `Edit Template.`,
+    title: { label: "Email Editor" },
+    content: `Adding from Email Template.`,
     actions: [
       {
         label: `Back`,
-        onClick: () => history.push(`/plugins/${pluginId}`),
+        onClick: () => history.push(`/plugins/${pluginId}/${urlKey}`),
         color: "secondary",
         type: "button",
       },
@@ -76,4 +72,4 @@ const DefaultSubscribeEditor = ({ urlKey }) => {
   );
 };
 
-export default DefaultSubscribeEditor;
+export default EmailEditor;

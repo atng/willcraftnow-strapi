@@ -1,22 +1,15 @@
 import React from "react";
 import Table from "../components/Table";
-import { useHistory, useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faPencilAlt,
-  faPlus,
-  faTrashAlt,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCopy, faPlus, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 
 import { baseUrl } from "../baseUrl";
 import pluginId from "../pluginId";
-import { useStrapi } from "strapi-helper-plugin";
 
 const TemplateList = (props) => {
   const history = useHistory();
-  const location = useLocation();
-  const { strapi } = useStrapi();
 
   const [dataResponse, setDataResponse] = React.useState(null);
 
@@ -56,9 +49,16 @@ const TemplateList = (props) => {
 
   const rowLinks = [
     {
-      icon: <FontAwesomeIcon icon={faTrashAlt} />,
+      icon: <FontAwesomeIcon icon={faCopy} />,
       onClick: (data) => {
-        console.log(data);
+        history.push(`/plugins/${pluginId}/add_email_templates/${data.id}`);
+      },
+    },
+    {
+      icon: <FontAwesomeIcon icon={faTrashAlt} />,
+      onClick: async (data) => {
+        await axios.delete(`${baseUrl}/${pluginId}/templates/${data.id}`);
+        getDataResponse();
       },
     },
   ];

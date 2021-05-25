@@ -4,15 +4,14 @@
  *
  */
 
-import React, { memo, useRef } from "react";
-import UnlayerEditor from "react-email-editor";
+import React from "react";
+
 import axios from "axios";
 import { useParams, useHistory } from "react-router-dom";
-import { InputText, Padded } from "@buffetjs/core";
-import MediaLib from "../../components/MediaLibrary";
+
 import pluginId from "../../pluginId";
 import { baseUrl } from "../../baseUrl";
-import { Header } from "@buffetjs/custom";
+
 import Editor from "../../components/Editor/";
 
 const EmailEditor = ({ urlKey }) => {

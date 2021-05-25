@@ -4,20 +4,15 @@
  *
  */
 
-import React, { memo, useRef } from "react";
-import axios from "axios";
+import React from "react";
+
 import pluginId from "../../pluginId";
-import EmailList from "../EmailList";
 
 import { List } from "@buffetjs/custom";
 import { IconLinks, Padded } from "@buffetjs/core";
 import { CustomRow as Row } from "@buffetjs/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faTrashAlt,
-  faPencilAlt,
-  faCube,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCube } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router-dom";
 
 const CustomRow = ({ icon, description, links, name, onClick }) => {

@@ -19,6 +19,7 @@ import Subscriber from "../Subscriber";
 import EmailEditor from "../EmailEditor";
 import TemplateEditor from "../TemplateEditor";
 import DefaultSubscribeEditor from "../DefaultSubscribeEditor";
+import TransferEditor from "../TransferEditor";
 
 const App = (props) => {
   return (
@@ -71,6 +72,13 @@ const App = (props) => {
           exact
         />
         <Route
+          path={`/plugins/${pluginId}/add_emails/:id`}
+          render={(componentProps) => {
+            const _props = { ...props, ...componentProps };
+            return <EmailEditor {..._props} urlKey="emails" />;
+          }}
+        />
+        <Route
           path={`/plugins/${pluginId}/default_emails/:email_type`}
           render={(componentProps) => {
             const _props = { ...props, ...componentProps };
@@ -79,13 +87,6 @@ const App = (props) => {
             );
           }}
           exact
-        />
-        <Route
-          path={`/plugins/${pluginId}/add_emails/:id`}
-          render={(componentProps) => {
-            const _props = { ...props, ...componentProps };
-            return <EmailEditor {..._props} urlKey="emails" />;
-          }}
         />
         <Route
           path={`/plugins/${pluginId}/templates`}
@@ -106,7 +107,21 @@ const App = (props) => {
           path={`/plugins/${pluginId}/add_templates/:id`}
           render={(componentProps) => {
             const _props = { ...props, ...componentProps };
-            return <EmailEditor {..._props} urlKey="templates" />;
+            return <TemplateEditor {..._props} urlKey="templates" />;
+          }}
+          exact
+        />
+        <Route
+          path={`/plugins/${pluginId}/add_email_templates/:id`}
+          render={(componentProps) => {
+            const _props = { ...props, ...componentProps };
+            return (
+              <TransferEditor
+                {..._props}
+                urlKey="emails"
+                getUrlKey="templates"
+              />
+            );
           }}
           exact
         />
