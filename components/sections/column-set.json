@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "Column": {
+    "column": {
       "type": "component",
       "repeatable": true,
       "component": "shared.column"

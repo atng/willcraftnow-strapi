@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "Slide": {
+    "slide": {
       "type": "component",
       "repeatable": true,
       "component": "shared.slide"
