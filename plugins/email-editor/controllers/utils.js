@@ -1,10 +1,6 @@
 "use strict";
 
 const _ = require("lodash");
-_.templateSettings = {
-  interpolate: /\{\{=(.+?)\}\}/g,
-  evaluate: /\{\{(.+?)\}\}/g,
-};
 
 const sendTemplatedEmail = (
   emailOptions = {},
@@ -12,6 +8,10 @@ const sendTemplatedEmail = (
   data = {}
 ) => {
   const attributes = ["subject", "text", "html"];
+  _.templateSettings = {
+    interpolate: /\{\{=(.+?)\}\}/g,
+    evaluate: /\{\{(.+?)\}\}/g,
+  };
   const missingAttributes = _.difference(
     attributes,
     Object.keys(emailTemplate)
