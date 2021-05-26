@@ -28,7 +28,8 @@
       "type": "string"
     },
     "bio": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "facebookUrl": {
       "type": "string"
