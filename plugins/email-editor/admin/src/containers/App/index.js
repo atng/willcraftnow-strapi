@@ -20,7 +20,7 @@ import EmailEditor from "../EmailEditor";
 import TemplateEditor from "../TemplateEditor";
 import DefaultSubscribeEditor from "../DefaultSubscribeEditor";
 import TransferEditor from "../TransferEditor";
-d;
+
 const App = (props) => {
   return (
     <div>
