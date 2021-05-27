@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/category-index",
+      "handler": "category-index.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/category-index",
+      "handler": "category-index.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/category-index",
+      "handler": "category-index.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

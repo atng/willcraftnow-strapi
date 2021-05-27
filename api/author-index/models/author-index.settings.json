@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "author_indices",
+  "info": {
+    "name": "AuthorIndex"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    }
+  }
+}

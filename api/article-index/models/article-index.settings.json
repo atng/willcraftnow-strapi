@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "article_indices",
+  "info": {
+    "name": "ArticleIndex"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "dynamic": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.email-collection"
+      ]
+    }
+  }
+}

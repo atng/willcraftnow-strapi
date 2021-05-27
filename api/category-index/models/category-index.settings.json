@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "category_indices",
+  "info": {
+    "name": "CategoryIndex"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "all_articles_link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.link"
+    }
+  }
+}
