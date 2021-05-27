@@ -70,10 +70,11 @@
       "component": "shared.seo",
       "required": true
     },
-    "email_collection": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.email-collection"
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.email-collection"
+      ]
     }
   }
 }
