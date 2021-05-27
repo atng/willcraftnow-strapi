@@ -19,7 +19,8 @@
       "type": "integer"
     },
     "endpoint": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "button_label": {
       "type": "string",
