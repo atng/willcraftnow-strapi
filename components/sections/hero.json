@@ -33,6 +33,9 @@
         "EMAIL_SIGNUP",
         "ENTER_MARKETPLACE"
       ]
+    },
+    "cta_endpoint": {
+      "type": "string"
     }
   }
 }
