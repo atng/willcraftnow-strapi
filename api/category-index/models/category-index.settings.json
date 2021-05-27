@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "category_indices",
   "info": {
-    "name": "CategoryIndex"
+    "name": "CategoryIndex",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -21,6 +22,12 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.link"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": true
     }
   }
 }
