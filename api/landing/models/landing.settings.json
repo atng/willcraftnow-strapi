@@ -24,7 +24,9 @@
         "sections.banner",
         "sections.email-collection",
         "sections.picture-grid",
-        "sections.hero"
+        "sections.hero",
+        "sections.featured-writers",
+        "sections.featured-articles"
       ],
       "pluginOptions": {
         "i18n": {

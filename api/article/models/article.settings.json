@@ -88,7 +88,9 @@
     "components": {
       "type": "dynamiczone",
       "components": [
-        "sections.email-collection"
+        "sections.email-collection",
+        "sections.featured-articles",
+        "sections.featured-writers"
       ],
       "pluginOptions": {
         "i18n": {

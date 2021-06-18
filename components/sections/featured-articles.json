@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_featured_articles",
+  "info": {
+    "name": "featured_articles",
+    "icon": "bacon"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "articles": {
+      "collection": "article"
+    }
+  }
+}

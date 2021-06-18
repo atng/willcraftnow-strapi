@@ -29,7 +29,9 @@
         "sections.column-set",
         "sections.banner",
         "sections.email-collection",
-        "sections.picture-grid"
+        "sections.picture-grid",
+        "sections.featured-writers",
+        "sections.featured-articles"
       ]
     }
   }

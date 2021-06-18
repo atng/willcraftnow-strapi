@@ -31,7 +31,7 @@
       "enum": [
         "SEARCH",
         "EMAIL_SIGNUP",
-        "ENTER_MARKETPLACE"
+        "ENTER_PORTAL"
       ]
     },
     "cta_endpoint": {
