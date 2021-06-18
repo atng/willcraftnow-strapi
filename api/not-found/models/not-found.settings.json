@@ -1,14 +1,13 @@
 {
   "kind": "singleType",
-  "collectionName": "contactuses",
+  "collectionName": "not_founds",
   "info": {
-    "name": "ContactUs",
-    "description": ""
+    "name": "NotFound"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -34,18 +33,9 @@
       "type": "string",
       "required": true
     },
-    "endpoint": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true
-    },
     "seo": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
