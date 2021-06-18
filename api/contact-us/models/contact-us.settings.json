@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "author_indices",
+  "collectionName": "contactuses",
   "info": {
-    "name": "AuthorIndex",
+    "name": "ContactUs",
     "description": ""
   },
   "options": {
@@ -17,33 +17,28 @@
   },
   "attributes": {
     "title": {
-      "type": "string",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string"
     },
     "sub_heading": {
-      "type": "string",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string"
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo",
-      "required": true,
+    "endpoint": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string"
     }
   }
 }
