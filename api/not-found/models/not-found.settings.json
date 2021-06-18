@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "not_founds",
   "info": {
-    "name": "NotFound"
+    "name": "NotFound",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -35,7 +36,7 @@
     },
     "seo": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
