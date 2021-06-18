@@ -44,6 +44,10 @@
       "repeatable": false,
       "component": "shared.seo",
       "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
