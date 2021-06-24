@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_testimonial_items",
+  "info": {
+    "name": "testimonial_item",
+    "icon": "arrow-left"
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "rating": {
+      "type": "integer",
+      "default": 0,
+      "max": 5,
+      "min": 0,
+      "required": true
+    }
+  }
+}

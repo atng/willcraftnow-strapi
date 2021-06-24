@@ -50,7 +50,9 @@
         "sections.button-list",
         "sections.blockquote",
         "sections.cta",
-        "sections.pricing"
+        "sections.pricing",
+        "sections.faq-section",
+        "sections.testimonials"
       ],
       "pluginOptions": {
         "i18n": {
