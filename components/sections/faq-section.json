@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_faq_sections",
+  "info": {
+    "name": "faq_section",
+    "icon": "arrow-alt-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "faq_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.faq-item"
+    }
+  }
+}

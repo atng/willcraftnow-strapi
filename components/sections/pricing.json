@@ -1,28 +1,27 @@
 {
-  "collectionName": "components_sections_column_sets",
+  "collectionName": "components_sections_pricings",
   "info": {
-    "name": "column_set",
-    "icon": "border-all",
+    "name": "pricing",
+    "icon": "trophy",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "column": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.column"
-    },
     "heading": {
       "type": "string",
       "required": true
     },
     "sub_heading": {
+      "type": "string",
+      "required": true
+    },
+    "footnote": {
       "type": "string"
     },
-    "expanded": {
-      "type": "boolean",
-      "default": false,
-      "required": true
+    "pricing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.pricing-card"
     },
     "cta": {
       "type": "component",

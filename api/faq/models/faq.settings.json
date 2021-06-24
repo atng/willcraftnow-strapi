@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "article_indices",
+  "collectionName": "faqs",
   "info": {
-    "name": "ArticleIndex",
+    "name": "faq",
     "description": ""
   },
   "options": {
@@ -16,9 +16,10 @@
     }
   },
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true,
+    "faq_section": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.faq-section",
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -27,30 +28,14 @@
     },
     "sub_heading": {
       "type": "string",
-      "required": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo",
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "dynamic": {
-      "type": "dynamiczone",
-      "components": [
-        "sections.email-collection",
-        "sections.featured-articles"
-      ],
+    "title": {
+      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true

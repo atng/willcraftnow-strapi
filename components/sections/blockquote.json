@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_blockquotes",
+  "info": {
+    "name": "blockquote",
+    "icon": "dolly-flatbed"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "richtext",
+      "required": true
+    },
+    "sub_heading": {
+      "type": "richtext"
+    }
+  }
+}

@@ -15,6 +15,11 @@
     },
     "writers": {
       "collection": "writer"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button-cta"
     }
   }
 }

@@ -107,7 +107,8 @@
     "footer_links": {
       "type": "dynamiczone",
       "components": [
-        "shared.link-group"
+        "shared.link-group",
+        "shared.text-group"
       ],
       "pluginOptions": {
         "i18n": {

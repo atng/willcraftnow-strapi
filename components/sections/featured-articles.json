@@ -2,7 +2,8 @@
   "collectionName": "components_sections_featured_articles",
   "info": {
     "name": "featured_articles",
-    "icon": "bacon"
+    "icon": "bacon",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,6 +15,11 @@
     },
     "articles": {
       "collection": "article"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button-cta"
     }
   }
 }

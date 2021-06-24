@@ -46,7 +46,11 @@
         "sections.email-collection",
         "sections.picture-grid",
         "sections.featured-writers",
-        "sections.featured-articles"
+        "sections.featured-articles",
+        "sections.button-list",
+        "sections.blockquote",
+        "sections.cta",
+        "sections.pricing"
       ],
       "pluginOptions": {
         "i18n": {

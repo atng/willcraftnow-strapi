@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_text_groups",
+  "info": {
+    "name": "text_group",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

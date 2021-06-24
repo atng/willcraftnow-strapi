@@ -13,6 +13,11 @@
     "heading": {
       "type": "string",
       "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button-cta"
     }
   }
 }

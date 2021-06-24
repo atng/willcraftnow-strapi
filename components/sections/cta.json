@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_ctas",
+  "info": {
+    "name": "CTA",
+    "icon": "hands"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "sub_heading": {
+      "type": "string",
+      "required": true
+    },
+    "button_label": {
+      "type": "string",
+      "required": true
+    },
+    "button_href": {
+      "type": "string",
+      "required": true
+    },
+    "primary": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_faq_items",
+  "info": {
+    "name": "faq_item",
+    "icon": "arrow-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

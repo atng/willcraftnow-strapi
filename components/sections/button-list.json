@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_button_lists",
+  "info": {
+    "name": "button_list",
+    "icon": "arrow-circle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "button_list_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.button-list-item"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button-cta",
+      "required": false
+    }
+  }
+}

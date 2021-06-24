@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_pricing_items",
+  "info": {
+    "name": "pricing_item",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "item_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

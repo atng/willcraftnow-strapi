@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_button_list_items",
+  "info": {
+    "name": "button_list_item",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "string"
+    },
+    "sub_header": {
+      "type": "string"
+    },
+    "additional_header": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

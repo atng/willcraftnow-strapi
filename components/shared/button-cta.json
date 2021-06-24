@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_button_ctas",
+  "info": {
+    "name": "button_cta",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "plain": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "primary": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

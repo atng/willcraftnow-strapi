@@ -26,7 +26,11 @@
         "sections.picture-grid",
         "sections.hero",
         "sections.featured-writers",
-        "sections.featured-articles"
+        "sections.featured-articles",
+        "sections.pricing",
+        "sections.blockquote",
+        "sections.cta",
+        "sections.button-list"
       ],
       "pluginOptions": {
         "i18n": {

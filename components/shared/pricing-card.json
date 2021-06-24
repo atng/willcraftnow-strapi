@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_pricing_cards",
+  "info": {
+    "name": "pricing_card",
+    "icon": "file-archive"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "sub_heading": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "pricing_item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.pricing-item"
+    }
+  }
+}
