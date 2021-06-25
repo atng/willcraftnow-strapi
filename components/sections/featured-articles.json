@@ -20,6 +20,9 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.button-cta"
+    },
+    "color": {
+      "type": "string"
     }
   }
 }

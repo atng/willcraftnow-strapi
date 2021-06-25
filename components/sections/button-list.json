@@ -26,6 +26,9 @@
       "repeatable": false,
       "component": "shared.button-cta",
       "required": false
+    },
+    "color": {
+      "type": "string"
     }
   }
 }

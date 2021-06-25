@@ -17,6 +17,9 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.testimonial-item"
+    },
+    "color": {
+      "type": "string"
     }
   }
 }

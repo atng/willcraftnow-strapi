@@ -25,6 +25,9 @@
     "button_label": {
       "type": "string",
       "required": true
+    },
+    "color": {
+      "type": "string"
     }
   }
 }
