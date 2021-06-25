@@ -54,7 +54,7 @@
       "default": "medium",
       "required": true
     },
-    "pricing_item": {
+    "cta": {
       "type": "component",
       "repeatable": false,
       "component": "shared.button-cta"
