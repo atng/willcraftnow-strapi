@@ -52,14 +52,13 @@
       },
       "component": "shared.seo"
     },
-    "path": {
+    "page_path": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }

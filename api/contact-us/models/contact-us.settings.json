@@ -115,14 +115,13 @@
       "type": "string",
       "required": true
     },
-    "path": {
+    "page_path": {
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   }
 }
