@@ -52,6 +52,15 @@
           "localized": true
         }
       }
+    },
+    "path_prefix": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }

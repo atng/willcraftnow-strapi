@@ -56,11 +56,7 @@
     "image": {
       "model": "file",
       "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
+      "allowedTypes": ["files", "images", "videos"],
       "plugin": "upload",
       "required": true,
       "pluginOptions": {
@@ -87,10 +83,7 @@
     },
     "components": {
       "type": "dynamiczone",
-      "components": [
-        "sections.email-collection",
-        "sections.featured-articles"
-      ],
+      "components": ["sections.email-collection", "sections.featured-articles"],
       "pluginOptions": {
         "i18n": {
           "localized": true

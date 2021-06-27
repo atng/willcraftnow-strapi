@@ -3,6 +3,24 @@ const {
   sanitizeEntity,
 } = require("strapi-utils");
 
+const getIndex = async (locale) => {
+  const key = "article-index";
+  const model = strapi.models[key];
+  const entity = await strapi.services[key].find({ locale });
+  return sanitizeEntity(entity, {
+    model,
+  });
+};
+
+const syncSlug = async (entity) => {
+  const defaultEntityRef = entity.localizations.find((e) => e.locale === "en");
+  if (!defaultEntityRef) return entity;
+  const defaultEntity = await strapi.services.article.findOne({
+    id: defaultEntityRef.id,
+  });
+  return { ...entity, slug: defaultEntity.slug };
+};
+
 module.exports = {
   /**
    * Retrieve a record.
@@ -14,7 +32,11 @@ module.exports = {
     const { slug } = ctx.params;
 
     const entity = await strapi.services.article.findOne({ slug });
-    return sanitizeEntity(entity, { model: strapi.models.article });
+    const index = await getIndex(entity.locale);
+    return {
+      ...sanitizeEntity(entity, { model: strapi.models.article }),
+      index,
+    };
   },
 
   async find(ctx) {
@@ -25,12 +47,16 @@ module.exports = {
       entities = await strapi.services.article.find(ctx.query);
     }
 
-    return entities.map((entity) => {
-      const model = strapi.models.article;
-      const sanitizedEntity = sanitizeEntity(entity, {
-        model: strapi.models.article,
-      });
-      return { ...sanitizedEntity, isDraft: isDraft(entity, model) };
-    });
+    return await Promise.all(
+      entities.map(async (entity) => {
+        const model = strapi.models.article;
+        const index = await getIndex(entity.locale);
+        const syncedEntity = await syncSlug(entity);
+        const sanitizedEntity = sanitizeEntity(syncedEntity, {
+          model: strapi.models.article,
+        });
+        return { ...sanitizedEntity, isDraft: isDraft(entity, model), index };
+      })
+    );
   },
 };

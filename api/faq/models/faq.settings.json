@@ -51,6 +51,15 @@
         }
       },
       "component": "shared.seo"
+    },
+    "path": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }

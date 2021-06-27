@@ -114,6 +114,15 @@
       },
       "type": "string",
       "required": true
+    },
+    "path": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true
     }
   }
 }
