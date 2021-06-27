@@ -6,6 +6,9 @@
  */
 
 module.exports = {
+  findOne(params, populate) {
+    return strapi.query("writer").findOne(params, populate);
+  },
   find(params, populate) {
     return strapi.query("writer").find(params, populate);
   },

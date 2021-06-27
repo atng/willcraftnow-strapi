@@ -15,10 +15,12 @@ const getIndex = async (locale) => {
 const syncSlug = async (entity) => {
   const defaultEntityRef = entity.localizations.find((e) => e.locale === "en");
   if (!defaultEntityRef) return entity;
+  // const allEntities = await strapi.services.category.find({});
+  // console.log({ entity, allEntities });
+  console.log("finding", strapi.services.category);
   const defaultEntity = await strapi.services.category.findOne({
     id: defaultEntityRef.id,
   });
-  console.log({ entity, defaultEntityRef, defaultEntity });
   return { ...entity, slug: defaultEntity.slug };
 };
 
@@ -30,6 +32,7 @@ module.exports = {
    */
 
   async findOne(ctx) {
+    console.log("params", ctx.params);
     const { slug } = ctx.params;
 
     const entity = await strapi.services.category.findOne({ slug });

@@ -6,6 +6,9 @@
  */
 
 module.exports = {
+  findOne(params, populate) {
+    return strapi.query("category").findOne(params, populate);
+  },
   find(params, populate) {
     return strapi.query("category").find(params, populate);
   },
