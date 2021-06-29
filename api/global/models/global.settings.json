@@ -106,7 +106,8 @@
       "type": "dynamiczone",
       "components": [
         "shared.link-group",
-        "shared.text-group"
+        "shared.text-group",
+        "shared.text-footer"
       ],
       "pluginOptions": {
         "i18n": {
@@ -119,7 +120,8 @@
       "components": [
         "shared.link",
         "shared.link-group",
-        "shared.button-link"
+        "shared.button-link",
+        "shared.language-switch"
       ],
       "pluginOptions": {
         "i18n": {

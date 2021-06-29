@@ -81,6 +81,14 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "see_all_articles_label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

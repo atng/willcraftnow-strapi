@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_language_switches",
+  "info": {
+    "name": "language_switch",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "language_1": {
+      "type": "string"
+    },
+    "language_2": {
+      "type": "string"
+    }
+  }
+}

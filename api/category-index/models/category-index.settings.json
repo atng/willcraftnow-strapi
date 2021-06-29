@@ -61,6 +61,14 @@
       },
       "type": "string",
       "required": true
+    },
+    "all_categories_button_label": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

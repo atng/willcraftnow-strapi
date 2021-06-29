@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_text_footers",
+  "info": {
+    "name": "text_footer",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "border_width": {
+      "type": "string"
+    }
+  }
+}
