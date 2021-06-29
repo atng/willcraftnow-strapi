@@ -9,18 +9,18 @@
   "attributes": {
     "heading": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "sub_heading": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "footnote": {
       "type": "string"
     },
     "pricing": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "shared.pricing-card"
     },
     "cta": {

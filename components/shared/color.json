@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_colors",
+  "info": {
+    "name": "color",
+    "icon": "battery-empty"
+  },
+  "options": {},
+  "attributes": {
+    "background_color": {
+      "type": "string"
+    },
+    "text_color": {
+      "type": "string"
+    }
+  }
+}

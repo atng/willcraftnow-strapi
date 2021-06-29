@@ -9,7 +9,7 @@
   "attributes": {
     "heading": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "sub_heading": {
       "type": "richtext"

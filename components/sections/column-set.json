@@ -14,7 +14,7 @@
     },
     "heading": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "sub_heading": {
       "type": "string"

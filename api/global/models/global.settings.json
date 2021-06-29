@@ -137,6 +137,16 @@
       },
       "type": "json",
       "required": false
+    },
+    "footer_color": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.color"
     }
   }
 }

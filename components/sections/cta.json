@@ -9,11 +9,11 @@
   "attributes": {
     "heading": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "sub_heading": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "button_label": {
       "type": "string",
