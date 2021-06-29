@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_split_screens",
+  "info": {
+    "name": "split_screen",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.button-cta"
+    },
+    "show_image_on_small": {
+      "type": "boolean"
+    }
+  }
+}

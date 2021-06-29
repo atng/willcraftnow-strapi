@@ -31,7 +31,9 @@
         "sections.cta",
         "sections.button-list",
         "sections.faq-section",
-        "sections.testimonials"
+        "sections.testimonials",
+        "sections.title",
+        "sections.split-screen"
       ],
       "pluginOptions": {
         "i18n": {
