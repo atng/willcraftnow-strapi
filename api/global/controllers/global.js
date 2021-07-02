@@ -1,8 +1,29 @@
 'use strict';
 
-/**
- * Read the documentation (https://strapi.io/documentation/v3.x/concepts/controllers.html#core-controllers)
- * to customize this controller
- */
+const {
+  contentTypes: { isDraft },
+  sanitizeEntity,
+} = require("strapi-utils");
 
-module.exports = {};
+const key = 'global'
+
+module.exports = {
+    async find(ctx) {
+    let entities;
+    if (ctx.query._q) {
+      entities = await strapi.services[key].search(ctx.query);
+    } else {
+      entities = await strapi.services[key].find(ctx.query);
+    }
+
+    return await Promise.all(
+      entities.map(async (entity) => {
+        const model = strapi.models[key];
+        const sanitizedEntity = sanitizeEntity(entity, {
+          model: strapi.models[key],
+        });
+        return { ...sanitizedEntity, isDraft: isDraft(entity, model) };
+      })
+    );
+  },
+};
