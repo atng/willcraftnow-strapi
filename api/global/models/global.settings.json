@@ -158,6 +158,17 @@
       "type": "boolean",
       "default": false,
       "required": false
+    },
+    "dynamic": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "shared.button-link"
+      ]
     }
   }
 }
