@@ -41,6 +41,16 @@
     "cta_label": {
       "type": "string",
       "required": true
+    },
+    "section_size": {
+      "type": "enumeration",
+      "enum": [
+        "medium",
+        "large",
+        "xlarge"
+      ],
+      "default": "large",
+      "required": true
     }
   }
 }

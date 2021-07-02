@@ -2,15 +2,18 @@
   "collectionName": "components_shared_colors",
   "info": {
     "name": "color",
-    "icon": "battery-empty"
+    "icon": "battery-empty",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "background_color": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "text_color": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }

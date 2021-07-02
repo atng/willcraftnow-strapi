@@ -146,7 +146,18 @@
           "localized": true
         }
       },
-      "component": "shared.color"
+      "component": "shared.color",
+      "required": true
+    },
+    "localise_pages": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

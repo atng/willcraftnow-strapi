@@ -23,6 +23,16 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.button-cta"
+    },
+    "section_size": {
+      "type": "enumeration",
+      "enum": [
+        "medium",
+        "large",
+        "xlarge"
+      ],
+      "default": "large",
+      "required": true
     }
   }
 }
