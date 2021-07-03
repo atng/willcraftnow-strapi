@@ -22,6 +22,10 @@
     "sub_heading": {
       "type": "string"
     },
+    "href": {
+      "type": "string",
+      "required": false
+    },
     "content": {
       "type": "richtext",
       "required": true
