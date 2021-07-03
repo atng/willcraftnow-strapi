@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_shared_sticky_button_links",
+  "info": {
+    "name": "sticky_button_link",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "primary": {
+      "type": "boolean",
+      "default": false
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xsmall",
+        "small",
+        "medium",
+        "large"
+      ],
+      "default": "small",
+      "required": true
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

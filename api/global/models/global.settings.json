@@ -167,7 +167,7 @@
       },
       "type": "dynamiczone",
       "components": [
-        "shared.button-link"
+        "shared.sticky-button-link"
       ]
     }
   }
