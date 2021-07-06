@@ -9,4 +9,7 @@ module.exports = {
   find(params, populate) {
     return strapi.query("landing").find(params, populate);
   },
+  findOne(params, populate) {
+    return strapi.query("landing").findOne(params, populate);
+  },
 };
