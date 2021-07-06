@@ -19,9 +19,7 @@ const syncSlug = async (entity) => {
 
 module.exports = {
   async findOne(ctx) {
-    const { slug } = ctx.params;
-
-    const entity = await strapi.services.landing.findOne({ slug });
+    const entity = await strapi.services.landing.findOne(ctx.params);
     return sanitizeEntity(entity, { model: strapi.models.landing });
   },
 

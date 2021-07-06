@@ -32,10 +32,7 @@ module.exports = {
    */
 
   async findOne(ctx) {
-    console.log("params", ctx.params);
-    const { slug } = ctx.params;
-
-    const entity = await strapi.services.category.findOne({ slug });
+    const entity = await strapi.services.category.findOne(ctx.params);
     const index = await getIndex(entity.locale);
 
     return {
