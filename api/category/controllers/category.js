@@ -18,7 +18,7 @@ const syncSlug = async (entity) => {
   if (!defaultEntityRef) return entity;
   // const allEntities = await strapi.services.category.find({});
   // console.log({ entity, allEntities });
-  const defaultEntity = await strapi.services.category.find({
+  const defaultEntity = await strapi.services.category.findOne({
     id: defaultEntityRef.id,
   });
   return { ...entity, slug: defaultEntity.slug };

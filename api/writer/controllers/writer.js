@@ -20,7 +20,7 @@ const getIndex = async (locale) => {
 const syncSlug = async (entity) => {
   const defaultEntityRef = entity.localizations.find((e) => e.locale === "en");
   if (!defaultEntityRef) return entity;
-  const defaultEntity = await strapi.services.writer.find({
+  const defaultEntity = await strapi.services.writer.findOne({
     id: defaultEntityRef.id,
   });
   return { ...entity, slug: defaultEntity.slug };
